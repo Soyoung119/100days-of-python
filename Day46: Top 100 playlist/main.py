@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ClIENT_ID = "ID"
-CLIENT_SECRET = "SECRET"
+ClIENT_ID = os.environ["ID"]
+CLIENT_SECRET = os.environ["SECRET"]
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
